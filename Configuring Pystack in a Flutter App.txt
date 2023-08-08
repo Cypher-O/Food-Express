@@ -1,0 +1,25 @@
+Configuring Paystack for the Application
+
+
+To enable seamless payment processing within our application, we'll integrate Paystack, a secure and efficient payment gateway. Follow the steps below to configure Paystack:
+
+-Sign Up on Paystack:
+Sign in to your Paystack dashboard and navigate to the "Developers" section to get your API keys. If you don't have an account sign up.
+
+-Install the flutter_paystack Package:
+In your Flutter project, add the flutter_paystack package as a dependency in your pubspec.yaml file and then run flutter pub get.
+
+-Configure API Keys
+Initialize paystack with your public key in your main entry point.
+
+-Initiate Payment:
+In the "Confirm Order" section of your app, when the user confirms their order and wishes to make a payment, integrate the Paystack payment process.
+
+-Handle Payment Result:
+The checkout method returns a ChargeResponse object that indicates whether the payment was successful. Based on the response, you can update the order status and proceed accordingly.
+
+-Error Handling:
+Implement error handling to manage scenarios where the payment fails or is canceled by the user.
+
+-Testing and Deployment:
+Thoroughly test the payment flow in a sandbox, emulator or test environment provided by Paystack before deploying it to your production application.
